@@ -1,7 +1,8 @@
 {
-  "name": "vite-react-typescript-starter",
+  "name": "voira.io",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://voira.io",
   "type": "module",
   "scripts": {
     "dev": "vite",
