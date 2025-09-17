@@ -216,7 +216,7 @@ function App() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Work stops when you need to read a manual.
+                👎🏻 Work stops when you need to read a manual.
               </h2>
               <div className="w-24 h-1 bg-red-400 mx-auto lg:mx-0 mb-6"></div>
               <p className="text-lg text-gray-600">
@@ -226,7 +226,7 @@ function App() {
             
             <div className="text-center lg:text-left">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Call Voira. She cites your SOPs and walks you through.
+                  👍🏻 Call Voira. She cites your SOPs and walks you through.
               </h2>
               <div className="w-24 h-1 bg-[#7258D8] mx-auto lg:mx-0 mb-6"></div>
               <p className="text-lg text-gray-600">
@@ -298,7 +298,7 @@ function App() {
                 description: 'Perfect for field work and busy environments'
               }
             ].map((benefit, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className="text-center px-12">
                 <div className="w-12 h-12 bg-[#6CC3FF]/20 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <CheckCircle className="w-6 h-6 text-[#7258D8]" />
                 </div>
@@ -417,12 +417,12 @@ function App() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">Integrates with your workflow</h2>
-          <p className="text-center text-gray-600 mb-12">Telephony: SIP/VOIP • Output: Slack, SMS, Email</p>
-          
+            <div className="flex justify-center items-center space-x-12 opacity-60">
+                <div className="text-2xl font-bold text-gray-400">SIP</div>
+                <div className="text-2xl font-bold text-gray-400">VOIP</div>
+                <div className="text-2xl font-bold text-gray-400">Slack</div>
+            </div>
           <div className="flex justify-center items-center space-x-12 opacity-60">
-            <div className="text-2xl font-bold text-gray-400">SIP</div>
-            <div className="text-2xl font-bold text-gray-400">VOIP</div>
-            <div className="text-2xl font-bold text-gray-400">Slack</div>
             <div className="text-2xl font-bold text-gray-400">SMS</div>
             <div className="text-2xl font-bold text-gray-400">Email</div>
           </div>
@@ -484,7 +484,7 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 sm:px-6 lg:px-8 bg-gray-900">
+      <footer className="py-8 px-4 sm:px-6 lg:px-8 w-full bg-gray-900">
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
               <img
