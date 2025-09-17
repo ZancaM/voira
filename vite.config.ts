@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   // base: '/voira/',
   optimizeDeps: {
-    exclude: ['lucide-react'],
+      include: ['lucide-react'],
   },
 });
