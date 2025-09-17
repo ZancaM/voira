@@ -16,6 +16,7 @@ import {
   FileCheck,
   ChevronDown
 } from 'lucide-react';
+import voiraLogo from './assets/voira_logo.png';
 
 interface FAQItemProps {
   question: string;
@@ -110,12 +111,14 @@ function App() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
+          <div className="flex justify-between items-center py-2">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-[#7258D8] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">V</span>
-              </div>
-              <span className="text-xl font-bold text-gray-900">Voira</span>
+              <img
+                src={voiraLogo}
+                alt="Voira Logo"
+                className="object-contain"
+                style={{ maxHeight: '3rem' }}
+              />
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
@@ -196,8 +199,8 @@ function App() {
               { icon: ChefHat, title: 'Kitchens', subtitle: '& F&B Ops' },
             ].map((item, index) => (
               <div key={index} className="text-center group cursor-pointer">
-                <div className="w-16 h-16 bg-white rounded-xl shadow-sm flex items-center justify-center mx-auto mb-4 group-hover:shadow-md transition-shadow">
-                  <item.icon className="w-8 h-8 text-[#7258D8]" />
+                <div className="w-24 h-24 bg-white rounded-xl shadow-sm flex items-center justify-center mx-auto mb-4 group-hover:shadow-md transition-shadow">
+                  <item.icon className="w-12 h-12 text-[#7258D8]" />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-1">{item.title}</h3>
                 <p className="text-sm text-gray-600">{item.subtitle}</p>
@@ -238,34 +241,34 @@ function App() {
       <section id="how-it-works" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">How it works in 3 steps</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-20">
             {[
               {
                 icon: Upload,
                 step: '1. Ingest',
-                title: 'Upload PDFs/URLs/MD → private knowledge base',
+                title: 'Upload PDFs/URLs/MD',
                 description: 'Simply upload your documents, SOPs, and manuals to create a secure knowledge base'
               },
               {
                 icon: Phone,
                 step: '2. Call',
-                title: 'Phone/WhatsApp, natural voice, barge-in',
+                title: 'Phone/WhatsApp, natural voice',
                 description: 'Call Voira anytime through phone or WhatsApp using natural conversation'
               },
               {
                 icon: MessageSquare,
                 step: '3. Guide',
-                title: 'Step-by-step with citations, then SMS/Slack checklist',
+                title: 'Step-by-step with citations',
                 description: 'Get precise guidance with source citations followed by digital checklists'
               }
             ].map((item, index) => (
               <div key={index} className="text-center">
-                <div className="w-20 h-20 bg-[#7258D8] rounded-xl flex items-center justify-center mx-auto mb-6">
+                <div className="w-24 h-20 bg-[#7258D8] rounded-xl flex items-center justify-center mx-auto mb-6">
                   <item.icon className="w-10 h-10 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.step}</h3>
                 <h4 className="font-semibold text-gray-900 mb-3">{item.title}</h4>
-                <p className="text-gray-600">{item.description}</p>
+                <p className="text-gray-600 px-5">{item.description}</p>
               </div>
             ))}
           </div>
@@ -484,10 +487,12 @@ function App() {
       <footer className="py-8 px-4 sm:px-6 lg:px-8 bg-gray-900">
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
-            <div className="w-8 h-8 bg-[#7258D8] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">V</span>
-            </div>
-            <span className="text-xl font-bold text-white">Voira</span>
+              <img
+                  src={voiraLogo}
+                  alt="Voira Logo"
+                  className="object-contain"
+                  style={{ maxHeight: '4rem' }}
+              />
           </div>
           <div className="text-gray-400 space-y-1">
             <p>© 2025 Voira. The new voice era.</p>
